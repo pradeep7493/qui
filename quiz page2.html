@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    *{
+        box-sizing: border-box;
+        font-size:110%;
+    }
+    .containers{
+        display: none;
+    }
+    #container1{
+        display: block;
+    }
+    h2{
+        margin: 1.5rem;
+        font-size: 2rem;
+    }
+    .quest div{
+        padding:0.7em 0em;
+        margin:5px;
+        background-color: rgb(184, 179, 173);
+    }
+    button{
+        font-size: 2rem;
+        margin: 1rem;
+        margin-left: 40%;
+        background-color: forestgreen;
+        border-radius: 20%;
+        display: block;
+    }
+    
+   </style>
+</head>
+<body>
+    <div id="container1" class="containers">
+        <div id="quest1" class="quest">
+           <h2> 1. Capital of Myanmar :</h2>
+            <div id="opt-box"><input type="radio" id="opt1.1" name="opt-box1"><label for="opt1.1">a) Thinfu</label></div>
+            <div id="opt-box"><input type="radio" id="opt1.2" name="opt-box1"> <label for="opt1.2">b) lagoon</label></div>
+            <div id="opt-box"><input type="radio" id="opt1.3" name="opt-box1"> <label for="opt1.3">c) pataya</label></div>
+            <div id="opt-box"><input type="radio" id="opt1.4" name="opt-box1"> <label for="opt1.4">d) Nay pyi taw</label></div>
+        </div>
+        <button id="nxt1">next</button>
+    </div>
+    <div id="container2" class="containers">
+        <div id="quest2" class="quest">
+            <h2> 2. India's position in terms of gdp :</h2>
+            <div id="opt-box"><input type="radio" id="opt2.1" name="opt-box2"> <label for="opt2.1">a) 3</label></div>
+            <div id="opt-box"><input type="radio" id="opt2.2" name="opt-box2"> <label for="opt2.2">b) 4</label></div>
+            <div id="opt-box"><input type="radio" id="opt2.3" name="opt-box2"> <label for="opt2.3">c) 5</label></div>
+            <div id="opt-box"><input type="radio" id="opt2.4" name="opt-box2"> <label for="opt2.4">d) 7</label></div>
+        </div>
+        <button id="nxt2">next</button>
+    </div>
+    <div id="container3" class="containers">
+        <div id="quest1" class="quest">
+            <h2> 3. which is african country :</h2>
+            <div id="opt-box"><input type="radio" id="opt3.1" name="opt-box3"> <label for="opt3.1">a) liberia</label></label></div>
+            <div id="opt-box"><input type="radio" id="opt3.2" name="opt-box3"> <label for="opt3.2">b) jamaica</label></div>
+            <div id="opt-box"><input type="radio" id="opt3.3" name="opt-box3"> <label for="opt3.3">c) nauru</label></div>
+            <div id="opt-box"><input type="radio" id="opt3.4" name="opt-box3"> <label for="opt3.4">d) suriname</label></div>
+        </div>
+        <button id="nxt3">next</button>
+    </div>
+    <div id="container4" class="containers">
+        <div id="quest1" class="quest">
+            <h2> 4. largest producer of rice/paddy :</h2>
+            <div id="opt-box"><input type="radio" id="opt4.1" name="opt-box4"> <label for="opt4.1">a) Russia</label></div>
+            <div id="opt-box"><input type="radio" id="opt4.2" name="opt-box4"><label for="opt4.2">b) China</label></div>
+            <div id="opt-box"><input type="radio" id="opt4.3" name="opt-box4"> <label for="opt4.3">c) India</label></div>
+            <div id="opt-box"><input type="radio" id="opt4.4" name="opt-box4"> <label for="opt4.4">d) USA</label></div>
+        </div>
+        <button id="nxt4">next</button>
+    </div>
+    <div id="container5" class="containers">
+        <div id="quest1" class="quest">
+            <h2> 5. Birth place of Albert Eistien :</h2>
+            <div id="opt-box"><input type="radio" id="opt5.1" name="opt-box5"> <label for="opt5.1">a) USA</label></div>
+            <div id="opt-box"><input type="radio" id="opt5.2" name="opt-box5"> <label for="opt5.2">b) England</label></div>
+            <div id="opt-box"><input type="radio" id="opt5.3" name="opt-box5"> <label for="opt5.3">c) Russia</label></div>
+            <div id="opt-box"><input type="radio" id="opt5.4" name="opt-box5"> <label for="opt5.4">d) Germany</label></div>
+        </div>
+        <button id="nxt5">next</button>
+    </div>
+    <div id="container6" class="containers">
+        <div id="quest1" class="quest">
+            <h2> 6. Biggest car brand of the world :</h2>
+            <div id="opt-box" for="opt6.1"><input type="radio" id="opt6.1" name="opt-box6"> <label for="opt6.1">a) Tesla</label></div>
+            <div id="opt-box"><input type="radio" id="opt6.2" name="opt-box6"> <label for="opt6.2">b) Rolls Royce</label></div>
+            <div id="opt-box"><input type="radio" id="opt6.3" name="opt-box6"> <label for="opt6.3">c) Toyota</label></div>
+            <div id="opt-box"><input type="radio" id="opt6.4" name="opt-box6"> <label for="opt6.4">d) BMW</label></div>
+        </div>
+        <button id="nxt6">see result</button>
+    </div>
+   
+    <script>
+
+        var cont1 = document.getElementById("container1");
+        var cont2 = document.getElementById("container2");
+        var cont3 = document.getElementById("container3");
+        var cont4 = document.getElementById("container4");
+        var cont5 = document.getElementById("container5");
+        var cont6 = document.getElementById("container6");
+
+        var nxt1 = document.getElementById("nxt1");
+        var nxt2 = document.getElementById("nxt2");
+        var nxt3 = document.getElementById("nxt3");
+        var nxt4 = document.getElementById("nxt4");
+        var nxt5 = document.getElementById("nxt5");
+        var nxt6 = document.getElementById("nxt6");
+
+        var ans1 = document.getElementById("opt1.4");
+        var ans2 = document.getElementById("opt2.3");
+        var ans3 = document.getElementById("opt3.1");
+        var ans4 = document.getElementById("opt4.2");
+        var ans5 = document.getElementById("opt5.4");
+        var ans6 = document.getElementById("opt6.3");
+
+        var score = 0;
+
+        nxt1.addEventListener("click",function(){
+            if(ans1.checked==true){
+            score++;
+        }
+            cont1.style.display="none";
+            cont2.style.display="block";
+            cont3.style.display="none";
+            cont4.style.display="none";
+            cont5.style.display="none";
+            cont6.style.display="none";
+        })
+        
+        nxt2.addEventListener("click",function(){
+            if(ans2.checked==true){
+            score++;
+        }
+            cont1.style.display="none";
+            cont2.style.display="none";
+            cont3.style.display="block";
+            cont4.style.display="none";
+            cont5.style.display="none";
+            cont6.style.display="none";
+        })
+        nxt3.addEventListener("click",function(){
+            if(ans3.checked==true){
+            score++;
+        }
+            cont1.style.display="none";
+            cont2.style.display="none";
+            cont3.style.display="none";
+            cont4.style.display="block";
+            cont5.style.display="none";
+            cont6.style.display="none";
+        })
+        nxt4.addEventListener("click",function(){
+            if(ans4.checked==true){
+            score++;
+        }
+            cont1.style.display="none";
+            cont2.style.display="none";
+            cont3.style.display="none";
+            cont4.style.display="none";
+            cont5.style.display="block";
+            cont6.style.display="none";
+        })
+        nxt5.addEventListener("click",function(){
+            if(ans5.checked==true){
+            score++;
+        }
+            cont1.style.display="none";
+            cont2.style.display="none";
+            cont3.style.display="none";
+            cont4.style.display="none";
+            cont5.style.display="none";
+            cont6.style.display="block";
+        })
+        
+       nxt6.addEventListener("click",function(){
+        if(ans6.checked==true){
+            score++;}
+        alert(score+" out of 6 are correct");
+        
+        })
+        
+    </script>
+</body>
+</html>
